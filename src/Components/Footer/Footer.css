@@ -1,0 +1,228 @@
+/* ============================================
+   FOOTER - MINIMALISTIC & SPACIOUS
+   ============================================ */
+
+:root {
+  --primary-color: #0a0e27;
+  --text-primary: #1f2937;
+  --text-light: #6b7280;
+  --accent-color: #6366f1;
+  --white: #ffffff;
+  --light-gray: #f9fafb;
+  --border-color: #e5e7eb;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer {
+  background: black;
+  border-top: 1px solid var(--border-color);
+  padding: 80px 20px;
+  margin-top: 120px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   MAIN CONTENT
+   ============================================ */
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+
+/* Brand Section */
+.footer-brand {
+  padding-right: 40px;
+}
+
+.footer-logo h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.footer-tagline {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* Links Section */
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-col h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav a {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  text-decoration: none;
+  transition: var(--transition);
+  font-weight: 400;
+  display: inline-block;
+  width: fit-content;
+}
+
+.footer-nav a:hover {
+  color: var(--accent-color);
+  transform: translateX(4px);
+}
+
+/* ============================================
+   DIVIDER
+   ============================================ */
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background: var(--border-color);
+  margin: 40px 0;
+}
+
+/* ============================================
+   BOTTOM SECTION
+   ============================================ */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-copyright {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin: 0;
+  font-weight: 400;
+}
+
+.footer-credits {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 0.9rem;
+}
+
+.footer-credits a {
+  color: var(--text-light);
+  text-decoration: none;
+  transition: var(--transition);
+  font-weight: 400;
+}
+
+.footer-credits a:hover {
+  color: var(--accent-color);
+}
+
+.footer-credits .divider {
+  color: var(--border-color);
+  font-weight: 300;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 20px;
+    margin-top: 80px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .footer-brand {
+    padding-right: 0;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 40px;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-divider {
+    margin: 30px 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 40px 16px;
+    margin-top: 60px;
+  }
+
+  .footer-logo h3 {
+    font-size: 1.25rem;
+  }
+
+  .footer-tagline {
+    font-size: 0.85rem;
+  }
+
+  .footer-col h4 {
+    font-size: 0.85rem;
+  }
+
+  .footer-nav a {
+    font-size: 0.85rem;
+  }
+
+  .footer-copyright,
+  .footer-credits {
+    font-size: 0.8rem;
+  }
+
+  .footer-links {
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
